@@ -20,7 +20,7 @@ type Player struct {
 
 func main() {
 
-	player := &Player{&User{123, "Samuel", "China"}, 456}
+	player := &Player{&User{1234, "Samuel", "China"}, 456}
 
 	println(player.Greetings())
 
