@@ -17,8 +17,7 @@ func main() {
 	var max int
 
 	for _, value := range names {
-		len := utf8.RuneCountInString(value)
-		if len > max {
+		if len := utf8.RuneCountInString(value); len > max {
 			max = len
 		}
 	}
